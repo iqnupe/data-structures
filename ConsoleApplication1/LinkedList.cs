@@ -17,6 +17,17 @@ namespace ConsoleApplication1
 
       public int Count { get; private set; }
 
+      public ListNode<T> Head
+      {
+         get { return _head; }
+         set { _head = value; }
+      }
+
+      public ListNode<T> Current
+      {
+         get { return _current; }
+      }
+
       public void Add(T data)
       {
          Count++;

@@ -39,5 +39,17 @@ namespace ConsoleApplication1
          btree.Root.Right = new BinaryTreeNode<int>(3);
 
       }
+
+      protected static void ParkingLot()
+      {
+         var locations = new Graph<int>();
+         for (int slot = 0; slot < 50; slot++)
+            locations.AddNode(slot);
+
+         locations.AddUndirectedEdge(1, 2, 3);
+         locations.AddUndirectedEdge(1, 3, 3);
+         
+
+      }
    }
 }
